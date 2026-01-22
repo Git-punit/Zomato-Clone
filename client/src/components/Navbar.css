@@ -1,0 +1,97 @@
+.navbar {
+    padding: 12px 0;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow like original */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand-logo {
+    margin-right: 24px;
+    display: block;
+}
+
+.logo-img {
+    height: 28px;
+    filter: invert(0);
+    /* Ensure it's visible on white */
+}
+
+.search-bar-container {
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 0 10px;
+    width: 50%;
+    height: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.location-input {
+    flex: 1;
+    position: relative;
+    max-width: 150px;
+}
+
+.location-input input,
+.search-input input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.search-input {
+    flex: 2;
+}
+
+.separator {
+    width: 1px;
+    height: 20px;
+    background-color: var(--text-gray);
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+.icon {
+    min-width: 20px;
+}
+
+.nav-right {
+    gap: 20px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: var(--zomato-red);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .search-bar-container {
+        display: none;
+        /* Simplify for mobile, maybe show icon only */
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}

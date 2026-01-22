@@ -1,0 +1,89 @@
+.restaurant-card {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.restaurant-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.res-img-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.res-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.promoted-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+}
+
+.discount-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background: #256fef;
+    color: white;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.res-details {
+    padding: 10px 5px;
+}
+
+.res-header {
+    margin-bottom: 5px;
+}
+
+.res-name {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.rating-badge {
+    background-color: #24963f;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.res-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.res-cuisine {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60%;
+}
+
+.res-timings {
+    font-size: 0.8rem;
+}

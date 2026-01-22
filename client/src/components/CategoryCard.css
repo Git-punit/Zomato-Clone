@@ -1,0 +1,39 @@
+.category-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.category-card:hover {
+    background-color: var(--bg-light);
+}
+
+.category-card.active {
+    border-bottom-color: var(--zomato-red);
+}
+
+.category-card.active .cat-title {
+    color: var(--zomato-red);
+}
+
+.cat-img-container {
+    background-color: #f8f8f8;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.cat-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.cat-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
